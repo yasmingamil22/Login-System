@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color:#445069;
+    --primary-color:#252B48;
+    --secondary-color:#161A30;
+    --base-color:#9a9a9a;
+}
+.home{
+   /* background-image: linear-gradient(to right top, #161a30, #191d34, #1b2039, #1e243d, #212742, #252b47, #28304b, #2c3450, #323b56, #38425c, #3e4963, #445069);
+   */
+   background-color: #252B48;
+   min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+.navbar{
+   /* box-shadow: 0 0 17px 10px rgb(0 0 0 / 12%);*/
+    background-color: #252B48;
+
+}
+.navbar-brand {
+color: var(--main-color);
+}
+
+.wave-svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    fill: #fff;
+  }

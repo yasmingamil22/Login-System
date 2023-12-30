@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color:#445069;
+    --primary-color:#252B48;
+    --secondary-color:#161A30;
+    --base-color:#9a9a9a;
+}
+body{
+    background-image: linear-gradient(to right top, #161a30, #191d34, #1b2039, #1e243d, #212742, #252b47, #28304b, #2c3450, #323b56, #38425c, #3e4963, #445069);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.design{
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+.rotate-45 {
+    transform: rotate(-45deg);
+}
+
+
+.design .pill-1 {
+    bottom: 60px;
+    left: -80px;
+    position: absolute;
+    height: 280px;
+    width: 120px;
+    background: linear-gradient( var(--secondary-color), var(--main-color), var(--primary-color));
+    border-radius: 60px;
+}
+
+.design .pill-2 {
+    top: -80px;
+    left: -10px;
+    position: absolute;
+    height: 600px;
+    width: 280px;
+    background: linear-gradient( var(--secondary-color), var(--main-color), var(--primary-color));
+
+    border-radius: 200px;
+    border: 30px solid #B6BBC4;
+   
+    
+
+}
+
+.design .pill-3 {
+    top: -120px;
+    left: 250px;
+    position: absolute;
+    height: 270px;
+    width: 120px;
+    background: linear-gradient( var(--secondary-color), var(--main-color), var(--primary-color));
+
+    border-radius: 70px;
+}
+
+.design .pill-4 {
+    bottom: -150px;
+    left: 290px;
+    position: absolute;
+    height: 260px;
+    width: 120px;
+    background: linear-gradient( var(--secondary-color), var(--main-color), var(--primary-color));
+   
+    border-radius: 70px;
+}
+
+ .content h2{
+    color: var(--primary-color);
+}
+ .content .text-input{
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 5px 0;
+}
+ .content .text-input input {
+    background: none;
+    border: none;
+    outline: none ;
+    margin-left: 5px;
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.text-input i {
+    color: #686868;
+}
+
+::placeholder {
+    color: var(--base-color);
+}
+ .content button{
+    background-image: linear-gradient(to right top, #161a30, #191d34, #1b2039, #1e243d, #212742, #252b47, #28304b, #2c3450, #323b56, #38425c, #3e4963, #445069);
+
+}
+
+
+a {
+    font-size: 18px;
+    color: var(--base-color);
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    transition: color .3s;
+}
+.login a:hover{
+    color: var(--primary-color) !important;
+}
+
+
+
+.login .create {
+    
+    color: var(--base-color) !important;
+    transition: color .3s;
+
+}
+
+.login .create i {
+    margin-left: 10px;
+}
+
+.login .create:hover{
+    color: var(--primary-color) !important;
+}
+ .btn{
+    --bs-btn-color: var(--base-color);
+    border: none;
+}
+
+
+.not-valid{
+    color: #f02849;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width:576px) {
+    .container{
+        width: 90vw;
+       
+    }
+    
+}
+@media (min-width:576px ) and ( max-width:768px) {
+    .container{
+        width: 70vw;
+       
+    }
+    
+}
+
+@media (min-width: 992px) {
+   
+
+    .design {
+        display: block;
+    }
+}

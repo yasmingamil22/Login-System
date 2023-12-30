@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+
+    <div class="home">
+
+    <div class="container">
+        <div class="row  h-100">
+          
+        <div class="design col-xxl-6 col-xl-5 col-lg-4">
+            <div class="pill-1 rotate-45"></div>
+            <div class="pill-2 rotate-45"></div>
+            <div class="pill-3 rotate-45"></div>
+            <div class="pill-4 rotate-45"></div>
+        </div>
+
+
+        <div id="loginPage" class=" login col-xxl-6 col-xl-7 col-lg-8 d-flex align-items-center flex-column justify-content-center ">
+
+            <div class="content w-75">
+                <h2 class="text-center py-3 fw-bold">Login </h2>
+
+                <div class="text-input my-2 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-user"></i>
+                    <input id="loginEmailInput" type="text" class=" form-control" placeholder="Enter your email">
+
+                </div>
+
+                <div id="invalidEmail" class="not-valid d-none">
+                    <p> Invalid email </p>     
+                </div>
+
+                <div class="text-input  d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-lock"></i>
+               <input id="loginpasswordInput" type="password"class="form-control " placeholder="Enter your password">
+            </div>
+
+            <div id="incorrectPassword" class="not-valid d-none">
+                <p> Incorrect password</p>     
+            </div>
+
+            <p id="inputsRequired" class="not-valid text-center mt-3 d-none">All inputs is required </p>
+
+               <button onclick="login()" class="my-2 p-1 w-100 border-0 rounded-5 text-white">LOGIN</button>
+           
+               <div class="text-center ">
+
+                <a href="#" onclick="goSignUp()" class="create btn  d-flex justify-content-center align-items-center">Create Your Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+               
+         </div>
+
+        </div>
+        
+        
+
+    </div>
+
+    
+   
+        
+    </div>
+    
+    
+
+    </div>
+    
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>
